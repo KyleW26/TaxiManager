@@ -45,7 +45,24 @@ nav {
 }
 
 .profileBox {
-
+  position: fixed;
+  left: 0px;
+  top: 40px;
+  width: 247px;
+  height: 200px;
+  background: white;
+  border-right: 3px solid #52565e;
+}
+.avatar {
+  border-radius: 50%;
+}
+.awesomeIcons {
+  padding-top: 25px;
+  padding-left: 25px;
+}
+.contentText h1 {
+  font-size: 20px;
+  padding-left: 140px;
 }
 
 .sidePanel {
