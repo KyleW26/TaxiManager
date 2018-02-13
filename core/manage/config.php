@@ -11,7 +11,7 @@
 	$_CONFIG['mysql']['db'] = ''; //Select the database you want to connect too
 
 	//Site Configuration
-	$_CONFIG['site']['url'] = 'http://localhost/TaxiManager'; //Server URL example.com (DOES NOT END WITH /)
+	$_CONFIG['site']['url'] = 'http://localhost:8080/TaxiManager'; //Server URL example.com (DOES NOT END WITH /)
 
 	$_CONFIG['site']['name'] = 'Taxi Manager'; //Website name, {SITE_NAME}
 

@@ -1,6 +1,7 @@
 body, html {
   padding: 0;
   margin: 0;
+  background-color: #ededed;
 }
 a {
   color: inherit;
@@ -8,30 +9,49 @@ a {
 }
 nav {
   width: 100%;
-  height: 70px;
+  height: 40px;
   background: #52565e;
 }
 .content {
   width: 50%;
   margin: 0 auto;
 }
-.Options {
-  font-family: 'Mukta Mahee', sans-serif;
-  font-size: 20px;
-  color: #fff;
-  display: inline-block;
+.currentTaxiBox {
+  position: fixed;
+  left: 300px;
+  top: 70px;
+  width: 300px;
+  height: 138px;
+  background: white;
+  border-bottom: 3px solid red;
 }
-.Option {
-  display: inline-block;
-  line-height: 40px;
-  padding: 17px 10px 10px 10px;
-  text-transform: uppercase;
+.regularBookings {
+  position: fixed;
+  left: 625px;
+  top: 70px;
+  width: 300px;
+  height: 138px;
+  background: white;
+  border-bottom: 3px solid green;
 }
-.Option:hover {
-  background: #46494f;
+.contentBox3 {
+  position: fixed;
+  left: 950px;
+  top: 70px;
+  width: 300px;
+  height: 138px;
+  background: white;
+  border-bottom: 3px solid blue;
 }
-.ContentBox {
-  width: 600px;
-  height: 400px;
-  margin: 160px auto;
+
+.profileBox {
+
+}
+
+.sidePanel {
+  position: fixed;
+  height: 100%;
+  width: 250px;
+  background: #52565e;
+  display: block;
 }
