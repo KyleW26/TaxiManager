@@ -11,6 +11,7 @@ define('M', '/manage');
 	//Class Files
 	require_once __DIR__ . C . '/template.class.php';
 	require_once __DIR__ . C . '/mysql.class.php';
+	require_once __DIR__ . C . '/users.class.php';
 
 	//Template System Information
 	$tplDes = $_CONFIG['site']['template'];
@@ -20,12 +21,17 @@ define('M', '/manage');
 	//Raw Addons
 	define('RAW_PATH', 'template/'.$tplDes);
 	//Begin Activating the Engine
-	use Krypton as Kry;
+	use Fenrir as Fen;
 
-	$template = new Kry\Template(TEMPLATE_PATH.TEMPLATE_PAGE);
+	$template = new Fen\Template(TEMPLATE_PATH.TEMPLATE_PAGE);
 
-	$mysql = new Kry\MySQL();
+	$mysql = new Fen\MySQL();
+
+	$user = new Fen\User();
 
 	//Other Activating
 	session_start();
+
+	$user->Login();
+	$user->Register();
 ?>
