@@ -39,6 +39,10 @@
           <li><a href="#taxis">Taxis</a></li>
           <li><a href="#rota">Operators Rota</a></li>
           <li><a href="#regular">Regular Bookings</a></li>
+          <br><br>
+          <li><a href="#register">Register</a></li>
+          <li><a href="#login">Log In</a></li>
+          <li><a href="#logout">Log Out</a></li>
         </ul>
       </div>
 
