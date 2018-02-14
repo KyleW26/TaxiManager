@@ -8,14 +8,14 @@
       //Checks the $_POST'd data is set.
       if(!empty($_POST['log_username']) && !empty($_POST['log_password'])) {
         //Run the SQL to select the data & check its correct.
-        $sql = "SELECT * users WHERE username = 1";
+        $sql = "SELECT * users WHERE username = :username";
         $stmt = $mysql->Connect->prepare($sql);
-        $stmt->bindParam(1, $_POST['log_username']);
+        $stmt->bindParam(':username', $_POST['log_username']);
         $stmt->execute();
 
         //Deal with the result, and ensure all is correct through the following if statement.
         $result = $stmt->fetch(\PDO::FETCH_ASSOC);
-        if(count($result > 0) && password_verify($_POST['log_password'], $result['password'])) {
+        if(count($result > 0) && $_POST['log_password'] === $result['password']) {
           $_SESSION['user']['id'] = $result['id'];
         } else {
           die("fuck up sonni"); //This is temp until I get error handling done for Fenrir!
@@ -30,10 +30,10 @@
         //Run the SQL
         $sql = "INSERT INTO users VALUES ('', 1, 2, 3, 4)";
         $stmt = $mysql->Connect->prepare($sql);
-        $stmt->bindParam(1, htmlspecialchars($_POST['reg_username']));
+        $stmt->bindParam(1, $_POST['reg_username']);
         $stmt->bindParam(2, password_hash($_POST['reg_password'], PASSWORD_BCRYPT));
-        $stmt->bindParam(3, htmlspecialchars($_POST['reg_first_name']));
-        $stmt->bindParam(4, htmlspecialchars($_POST['reg_last_name']));
+        $stmt->bindParam(3, $_POST['reg_first_name']);
+        $stmt->bindParam(4, $_POST['reg_last_name']);
         $stmt->execute();
       } else {
       }

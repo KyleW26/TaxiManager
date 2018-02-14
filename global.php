@@ -25,13 +25,12 @@ define('M', '/manage');
 
 	$template = new Fen\Template(TEMPLATE_PATH.TEMPLATE_PAGE);
 
-	$mysql = new Fen\MySQL();
-
 	$user = new Fen\User();
+	
+	$mysql = new Fen\MySQL();
 
 	//Other Activating
 	session_start();
 
 	$user->Login();
-	$user->Register();
 ?>

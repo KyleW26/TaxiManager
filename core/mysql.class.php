@@ -1,5 +1,6 @@
 <?php
 	namespace Fenrir;
+	
 		define('host', $_CONFIG['mysql']['host']);
 		define('user', $_CONFIG['mysql']['user']);
 		define('pass', $_CONFIG['mysql']['pass']);

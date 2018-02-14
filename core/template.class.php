@@ -20,7 +20,7 @@
 				}
 				else
 				{
-					echo "Krypton Template System Error: File not found! PATH = ".$_path;
+					echo "Fenrir Template System Error: File not found! PATH = ".$_path;
 				}
 			}
 
