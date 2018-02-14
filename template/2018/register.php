@@ -13,7 +13,7 @@
 
 <!-- Beginning of the form -->
 <div class="mainContainer">
-<form action="">
+<form action="" method="post">
     <center><h1>Sign Up to TaxiManager!</h1>
     <p>Please fill in this form to create an account</p></center>
 
