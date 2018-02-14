@@ -12,11 +12,41 @@
     <nav>
     </nav>
 
+    <div class="profileBox">
+      <p><center> Welcome, *USER* </center></p>
+          <center><img src="{URL}/img/avatar.png" width="96" height="96" class="avatar"><center>
+            <br>
+            <a href="{URL}/messages.html"><i class="fas fa-envelope fa-2x"></i></a>
+            <a href="{URL}/user.html"><i class="fas fa-user-circle fa-2x"></i></a>
+            <a href="{URL}/settings.html"><i class="fas fa-cog fa-2x"></i></a>
+            <hr>
+    </div>
+
     <div class="sidePanel">
       <div class="profileBox">
-        <p><center> Welcome *USERNAME* </center></p>
-            <center><img src="{URL}/img/avatar.png" width="128" height="128" class="avatar"><center>
+        <p><center> Welcome, *USER* </center></p>
+            <center><img src="{URL}/img/avatar.png" width="96" height="96" class="avatar"><center>
+              <br>
+              <a href="#messages"><i class="fas fa-envelope fa-2x"></i></a>
+              <a href="#user"><i class="fas fa-user-circle fa-2x"></i></a>
+              <a href="#settings"><i class="fas fa-cog fa-2x"></i></a>
+              <hr>
       </div>
+
+      <div class="menuBar">
+        <ul>
+          <li><a href="#home">Hub</a></li>
+          <li><a href="#taxis">Taxis</a></li>
+          <li><a href="#rota">Operators Rota</a></li>
+          <li><a href="#regular">Regular Bookings</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="dashboardText">
+      <i class="fas fa-clipboard"></i>
+       My Dashboard
     </div>
 
     <div class="currentTaxiBox">
@@ -43,12 +73,15 @@
 
     <div class="contentBox3">
       <div class="awesomeIcons">
-        <i class="fas fa-user" style="font-size:80px"></i>
+        <i class="fas fa-id-badge" style="font-size:80px"></i>
       </div>
 
       <div class="contentText">
         <h1> Current Operator </h1>
       </div>
+    </div>
+
+    <div class="recentJobs">
 
     </div>
 
